@@ -1,5 +1,9 @@
 
-# EMACS-LIVE Custom Configuration
+# emacs-live Custom Configuration
+
+## emacs-live
+
+An emacs starter kit. 
 
 ## Usage
 
