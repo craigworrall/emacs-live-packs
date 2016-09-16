@@ -14,3 +14,18 @@
 ;;(if (fboundp 'tool-bar-mode) (tool-bar-mode 1))
 (if (fboundp 'menu-bar-mode) (menu-bar-mode 1))
 
+;; store all backup and autosave files in the tmp dir
+;; (so they do not appear in searches etc)
+(setq backup-directory-alist
+      `((".*" . ,temporary-file-directory)))
+(setq auto-save-file-name-transforms
+      `((".*" ,temporary-file-directory t)))
+
+;; maximise window
+(toggle-frame-maximized)
+
+;; load 'find file at point' bindings
+(ffap-bindings)
+
+;; why not start a shell
+(shell "my-shell")
