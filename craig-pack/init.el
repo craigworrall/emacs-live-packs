@@ -28,7 +28,7 @@
 (ffap-bindings)
 
 ;; why not start a shell
-(shell "my-shell")
+;;(shell "my-shell")
 
 ;; start js-mode when open relevant files
 (add-to-list 'auto-mode-alist '("\\.js$" . js-mode))
