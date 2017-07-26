@@ -7,5 +7,9 @@ An emacs starter kit.
 
 ## Usage
 
-Ensure ~/.live-packs is symbolically linked to this directory.
+Ensure the ~/.live-packs directory exists, and contains craig-pack and any other required packs. In ```~/.emacs-live.el```, load the packs.
+```
+$ cat ~/.emacs-live.el 
+(live-add-packs '(~/.live-packs/craig-pack))
+```
 
