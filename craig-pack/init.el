@@ -33,3 +33,6 @@
 ;; start js-mode when open relevant files
 (add-to-list 'auto-mode-alist '("\\.js$" . js-mode))
 (add-to-list 'auto-mode-alist '("\\.json$" . js-mode))
+
+;; convenient key bindings
+(global-set-key (kbd "<f6>") 'multi-occur-in-matching-buffers)
